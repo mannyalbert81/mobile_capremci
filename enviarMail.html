@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Insert title here</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/mail.js"></script>
+</head>
+<body>
+<div data-role="page" id="index" >
+	<div role="main" class="ui-content" >
+		<div style="margin-top: 1%" align="center" >
+		<img  src="img/logo_vademano.png" class="zoom" vspace="2" /> 
+		</div>
+		<div>
+		<input type="text" name="txtNombres" id="txtNombres" placeholder="Ingrese nombre">
+		<input type="text" name="txtApellidos" id="txtApellidos" placeholder="Ingrese apellidos">
+		<input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Ingrese telefono">
+		<input type="tel" name="txtCelular" id="txtCelular" placeholder="Ingrese celular">
+		<input type="text" name="txtEmail" id="txtEmail" placeholder="Ingrese correo">
+		<label for="txtMensaje">Mensaje</label>
+		<textarea rows="" name="txtMensaje" id="txtMensaje" cols=""></textarea>
+		<button onclick="enviarE()">Enviar</button>
+		</div>
+   </div>
+</div>
+</body>
+</html>

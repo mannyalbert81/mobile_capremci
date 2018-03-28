@@ -1,0 +1,567 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<title>Ficha Online</title>
+	<meta charset="utf-8" />	
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/efecto_logo.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/main_menu.js"></script>
+	<script src="cordova.js"></script>
+   
+
+
+    <script >
+	$(document).ready(function(){
+			
+		$("#categoria_farmacologica").click(function(){
+					
+			$('#div_categoria_farmacologica').toggle("slow");
+		
+		});
+	});
+	</script >
+	 <script >
+		$(document).ready(function(){
+				
+			$("#forma_farmaceutica").click(function(){
+						
+				$('#div_forma_farmaceutica').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#especies_destino").click(function(){
+						
+				$('#div_especies_destino').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#composicion").click(function(){
+						
+				$('#div_composicion').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#caracteristicas").click(function(){
+						
+				$('#div_caracteristicas').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#mecanismos_accion").click(function(){
+						
+				$('#div_mecanismos_accion').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#indicaciones_uso").click(function(){
+						
+				$('#div_indicaciones_uso').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#dosificacion").click(function(){
+						
+				$('#div_dosificacion').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#periodo_retiro").click(function(){
+						
+				$('#div_periodo_retiro').toggle("slow");
+			
+			});
+		});
+		</script>
+			 <script >
+		$(document).ready(function(){
+				
+			$("#advertencias").click(function(){
+						
+				$('#div_advertencias').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#via_administracion").click(function(){
+						
+				$('#div_via_administracion').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#interacciones").click(function(){
+						
+				$('#div_interacciones').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#contradicciones").click(function(){
+						
+				$('#div_contradicciones').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#efectos_colaterales").click(function(){
+						
+				$('#div_efectos_colaterales').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#conservacion").click(function(){
+						
+				$('#div_conservacion').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#presentaciones").click(function(){
+						
+				$('#div_presentaciones').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#registro_agrocalidad").click(function(){
+						
+				$('#div_registro_agrocalidad').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#fabricado_por").click(function(){
+						
+				$('#div_fabricado_por').toggle("slow");
+			
+			});
+		});
+		</script>
+				 <script >
+		$(document).ready(function(){
+				
+			$("#distribuido_por").click(function(){
+						
+				$('#div_distribuido_por').toggle("slow");
+			
+			});
+		});
+		</script>
+</head>
+<body >
+
+
+
+
+
+	<div data-role="page">
+	<div role="main" class="ui-content">
+    	
+ 
+<header>
+    
+    	<span id="button-menu" class="fa fa-bars"></span>
+        <nav class="navegacion">
+			<ul class="menu">
+				<!-- TITULAR -->
+			<li class="title-menu"><img src="img/mano.png" width="50" height="50" class="zoom" vspace="2" /></li>
+					<!-- TITULAR -->
+				<li><a href="Bienvenida.html"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
+   		        <li><a href="buscador1.html"><span class="fa fa-folder icon-menu"></span>Vademécum</a></li>
+				<li class="item-submenu" menu="1">
+					<a href="#"><span class="fa fa-envelope icon-menu"></span>Contactos</a>
+					<ul class="submenu">
+						<li class="title-menu"><span class="fa fa-envelope icon-menu"></span>Contactos</li>
+						<li class="go-back">Atras</li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="http://vademano.masoft.net/">Sitio Web</a></li>
+					</ul>
+				</li>
+					 <li><a id="close"><span class="fa fa-times icon-menu"></span>Salir</a></li>
+			
+				
+			</ul>
+		</nav>
+	 </header>
+    
+	 
+	  <div align="center" style="margin-top:80px;">
+    	<img  src="img/logo_vademano.png" class="zoom" vspace="5" /> 
+    	</div>
+    	 <form action=" method=" target="_blank" enctype="multipart/form-data" class="col-lg-12">
+    	
+    	 
+  		  	<div class="col-lg-12 col-md-12 division" style="-webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.69); border-radius: 24px 24px 24px 24px; margin-top: 20px; ">
+			<div class="col-lg-7 col-md-7 col-xs-12" style="margin-top: 30px;">
+
+
+		<div style="font-family: Arial; font-size:16pt; color:#31B046; width: 100%; text-align: center; ">
+		<font size=6><strong><div id="nombre_fichas"></div></strong></font>
+		<img id="foto"/>
+		</div>
+
+		<div id="categoria_farmacologica_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="categoria_farmacologica" id="categoria_farmacologica" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>CATEGORÍA FARMACOLÓGICA: </strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_categoria_farmacologica" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="clasificacion_farmacologica_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      	<div id="forma_farmaceutica_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="forma_farmaceutica" id="forma_farmaceutica" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>FORMA FARMACÉUTICA:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_forma_farmaceutica" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="forma_terapeutica_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      </div>
+	 		
+      	<div id="especies_destino_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="especies_destino" id="especies_destino" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>ESPECIES DE DESTINO:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_especies_destino" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><center><div id="foto_especies"></div></center></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      		</div>
+	 
+      	<div id="composicion_display"class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="composicion" id="composicion" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>COMPOSICIÓN:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_composicion" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><center><h3><div id="encabezado_tabla_fichas"></div></h3><h2><div id="tabla_composicion"></div></h2></center></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      	<div id="caracteristicas_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="caracteristicas" id="caracteristicas" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>CARACTERISTICAS:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_caracteristicas" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="accion_terapeutica_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      		</div>
+	 
+      		<div id="mecanismos_accion_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="mecanismos_accion" id="mecanismos_accion" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>MECANISMOS DE ACCIÓN:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_mecanismos_accion" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="mecanismo_accion_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 
+      		<div id="indicaciones_uso_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="indicaciones_uso" id="indicaciones_uso" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>INDICACIONES DE USO:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_indicaciones_uso" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="indicaciones_uso_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      </div>
+	 		
+      		<div id="dosificacion_display"class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="dosificacion" id="dosificacion" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>DOSIFICACIÓN DE:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_dosificacion" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><center><h3><div id="encabezado_dosificacion_fichas"></div></h3><h2><div id="tabla_dosificacion"></div></h2></center></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="periodo_retiro_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="periodo_retiro" id="periodo_retiro" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>PERIODO DE RETIRO:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_periodo_retiro" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="periodo_retiro_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      		</div>
+	 
+      		<div id="advertencias_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="advertencias" id="advertencias" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>ADVERTENCIAS:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_advertencias" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="advertencias_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      		</div>
+	 
+      		<div id="via_administracion_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="via_administracion" id="via_administracion" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>VÍA DE ADMINISTRACIÓN:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_via_administracion" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="tabla_formas_administracion"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      		</div>
+	 
+      		<div id="interacciones_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="interacciones" id="interacciones" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>INTERACCIONES:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_interacciones" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="interacciones_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="contradicciones_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="contradicciones" id="contradicciones" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>CONTRAINDICACIONES:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_contradicciones" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="contraindicaciones_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="efectos_colaterales_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="efectos_colaterales" id="efectos_colaterales" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>EFECTOS COLATERALES:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_efectos_colaterales" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="efectos_colaterales_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="conservacion_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="conservacion" id="conservacion" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>CONSERVACIÓN:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_conservacion" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="conservacion_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="presentaciones_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="presentaciones" id="presentaciones" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>PRESENTACIONES:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_presentaciones" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="presentacion_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="registro_agrocalidad_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="registro_agrocalidad" id="registro_agrocalidad" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>REGISTRO AGROCALIDAD:</strong></button></h4>
+	 	 <div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_registro_agrocalidad" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><h3><div style="text-align:justify;" id="registro_sanitario_fichas"></div></h3></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      </div>
+	 		
+      		<div id="fabricado_por_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 <h4><button type="button" name="fabricado_por" id="fabricado_por" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>FABRICADO POR: <div id="nombre_laboratorios"></div></strong></button></h4>
+	 	 	<div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_fabricado_por" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><center><h3><div style="text-align:justify;" id="tabla_laboratorios"></div></h3></center></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      	</div>
+      	</div>
+	 	
+      		<div id="distribuido_por_display" class=" col-lg-4 col-md-4 col-xs-6">
+	 		 	<h4><button type="button" name="distribuido_por" id="distribuido_por" style="margin-top:5px; background-color:#999E9A; color:#FFFFFF; font-family:verdana; font-size:100%; text-align:center; width: 100%; height: 100;"><strong>DISTRIBUIDO POR: <div id="nombre_distribuidores"></div></strong></button></h4>
+	 		<div class="row">
+        	<div class="col-xs-12 col-md-12" id="div_distribuido_por" style="display: none;" >
+      	 		<div class="panel panel-info">
+	     			<div class="panel-body"> 
+        				<div class="col-xs-6 col-md-6 col-lg-6">
+        					<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;"><center><h3><div style="text-align:justify;" id="tabla_distribuidores"></div></h3></center></font>
+						</div>
+       				</div>
+        		</div>
+        	</div>
+      		</div>
+		</div>
+  		<table class="info" style="width:100%;"><tr>
+		<td class="info" style="font-size: 60%; padding: 5px;" align="justify">
+		<br>
+		<font size=3 style="color:#010a01; font-family: Times New Roman;  width:100%;"><strong> DECLARACIÓN LEGAL: </strong></font>
+		<br>
+		<font size=2 style="color:#010a01; font-family: Times New Roman;  width:100%;">El contenido de este sitio es sólo para motivos informativos y de ninguna manera
+		se debe utilizar sin consultar a un médico veterinario Toda la información es 
+		proporcionada por el fabricante y / o distribuidor del producto por lo tanto Vademano
+		no asume responsabilidad por errores u omisiones en los contenidos que se publican aquí .
+		</font></td>
+     </tr></table>
+	</div>
+</div>
+</form>
+</div>  
+</div>
+<br>
+
+<script type="text/javascript">
+$('#close').click(function(){navigator.app.exitApp();})
+</script>
+<script type="text/javascript" src="js/cargar_ficha.js"></script>
+</body>  
+</html>
