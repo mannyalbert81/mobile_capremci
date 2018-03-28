@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Capremci</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        
+        <script src="js/jquery-3.2.1.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+	        
+        
+	       <!-- Bootstrap -->
+	    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Font Awesome -->
+	    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	    <!-- NProgress -->
+	    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+	    <!-- Animate.css -->
+	    <link href="vendors/animate.css/animate.min.css" rel="stylesheet">
+	
+
+	
+	 </head>
+	 
+	 <body class="login" >
+	 
+	 <div  align="center">
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+           <div style="margin-top: 0%" align="center" >
+    			<img src="img/bcaprem.png" width="80%" height="150" vspace="25"/>
+    	   </div>
+            <h3>Iniciar Sesión</h3>
+              <div style="width:80%">
+                <input id="cedula"  name="cedula" type="text" class="form-control" placeholder="cedula.."/>
+              </div>
+              <div style="width:80%">
+                <input id="clave" name="clave"   type="password" class="form-control" placeholder="password.."/>
+              </div>
+              <div style="width:80%">
+              	<button type="button" id="btn_iniciar" class="btn btn-success" ><i class="fa fa-unlock fa-spin" aria-hidden="true"></i> Login</button>
+               </div>
+
+              <div class="clearfix"></div>
+			   <div class="separator">
+                <div class="clearfix"></div>
+                <div>
+                </div>
+              </div>
+                   		   
+           
+          </section>
+        </div>
+      </div>
+    </div>
+	 
+	 
+	 
+	
+	 
+	 
+	
+	
+	<script src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready( function (){
+		   pone_espera();
+	});
+		
+	function pone_espera(){
+	
+		   $.blockUI({ 
+				message: '<h4><img src="img/load.gif" /> Cargando...</h4>',
+				css: { 
+		            border: 'none', 
+		            padding: '15px', 
+		            backgroundColor: '#000', 
+		            '-webkit-border-radius': '10px', 
+		            '-moz-border-radius': '10px', 
+		            opacity: .5, 
+		            color: '#fff',
+		           
+	     		}
+	 });
+		
+	 setTimeout($.unblockUI, 4000); 
+	 
+	}
+	</script>
+	<script src="js/iniciar.js"></script>
+	
+
+ 
+</body>
+
+</html>
