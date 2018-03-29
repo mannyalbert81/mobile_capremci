@@ -5,6 +5,9 @@ $(document).on("ready",onDeviceReady);
 
 function onDeviceReady() 
 {
+	
+	iniciar_banner();
+	
 	$(document).on('click', '#btn_iniciar', function(){
 		
 		checkConnection();
@@ -109,6 +112,60 @@ function checkConnection() {
      }
      
     }
+
+
+
+
+
+
+function iniciar_banner() {
+    
+	var networkState = navigator.network.connection.type;
+    var states = {};
+    
+    states[Connection.UNKNOWN]  = '1';  //Conexión desconocida;
+    states[Connection.ETHERNET] = '1';  //Conexión ethernet;
+    states[Connection.WIFI]     = '1';  //Conexión WiFi';
+    states[Connection.CELL_2G]  = '1';  //Conexión movil 2G';
+    states[Connection.CELL_3G]  = '1';  //Conexión movil 3G';
+    states[Connection.CELL_4G]  = '1';  //Conexión movil 4G';
+    states[Connection.NONE]     = '0';  //Sin conexión';
+      
+    online=states[networkState];
+   
+     if (online=='1'){
+    	 	
+    		var base_url = 'http://18.218.148.189:80/webservices/';
+    		var pag_service = 'LoginService.php' ;
+    	 
+    		
+    		$.ajax({
+    			   type: 'POST',
+    			   url: base_url+pag_service,
+    			   data:{action:'banner'},
+    			   dataType: 'json',
+    			   success: function (x) {
+    				 		
+    				   $("#banner").html(x);
+    				  
+    				   } ,
+    				error: function (jqXHR, textStatus, errorThrown) {
+    				     alert("Consulte con los administradores del sistema.");
+    			 }
+
+    			});
+    		
+    		
+    	 
+     }else{
+    	 
+    	
+    	
+     }
+     
+    }
+
+
 
 
 

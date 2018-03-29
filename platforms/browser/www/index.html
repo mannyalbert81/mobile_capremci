@@ -13,17 +13,14 @@
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
 	        
-        
-	       <!-- Bootstrap -->
-	    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	    <!-- Font Awesome -->
-	    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	    <!-- NProgress -->
-	    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
-	    <!-- Animate.css -->
-	    <link href="vendors/animate.css/animate.min.css" rel="stylesheet">
+	        
 	
-
+        
+        
+         <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    		
+        
+      
 	
 	 </head>
 	 
@@ -37,7 +34,7 @@
         <div class="animate form login_form">
           <section class="login_content">
            <div style="margin-top: 0%" align="center" >
-    			<img src="img/bcaprem.png" width="80%" height="150" vspace="25"/>
+    			<img src="img/bcaprem.png" width="80%" height="100" vspace="25"/>
     	   </div>
             <h3>Iniciar Sesión</h3>
               <div style="width:80%">
@@ -58,7 +55,10 @@
               </div>
                    		   
            
+           
           </section>
+          
+           <div id="banner" style="margin-top:30px;"></div>
         </div>
       </div>
     </div>
@@ -75,6 +75,7 @@
 	
 	$(document).ready( function (){
 		   pone_espera();
+		   iniciar_banner();
 	});
 		
 	function pone_espera(){
@@ -93,12 +94,14 @@
 	     		}
 	 });
 		
-	 setTimeout($.unblockUI, 4000); 
+	 setTimeout($.unblockUI, 2000); 
 	 
 	}
 	</script>
 	<script src="js/iniciar.js"></script>
-	
+	<!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+   
 
  
 </body>
