@@ -1,6 +1,8 @@
 
 $(document).on("ready",onDeviceReady);
 
+document.addEventListener("deviceready", onDeviceReady, false);
+var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
 
 
 function onDeviceReady() 
@@ -8,11 +10,7 @@ function onDeviceReady()
 	
 	iniciar_banner();
 	
-	$(document).on('click', '#btn_iniciar', function(){
-		
-		checkConnection();
-
-	});
+	
 }
 
 var online;
@@ -99,6 +97,8 @@ function checkConnection() {
     				   } ,
     				error: function (jqXHR, textStatus, errorThrown) {
     				     alert("Usuario no existe.");
+    				     $("#cedula").val("");
+ 				    	$("#clave").val("");
     			 }
 
     			});
@@ -109,6 +109,8 @@ function checkConnection() {
     	 
     	 alert('Tu dispositivo no tiene internet.');
     	 window.location.href = "index.html";
+    	 $("#cedula").val("");
+	    	$("#clave").val("");
      }
      
     }
@@ -135,9 +137,13 @@ function iniciar_banner() {
    
      if (online=='1'){
     	 	
+    	 
+    	
+    	 
     		var base_url = 'http://18.218.148.189:80/webservices/';
     		var pag_service = 'LoginService.php' ;
-    	 
+    		var queryIns = 'INSERT INTO banner(nombre_banner) VALUES (?)';
+    		
     		
     		$.ajax({
     			   type: 'POST',
@@ -148,6 +154,15 @@ function iniciar_banner() {
     				 		
     				   $("#banner").html(x);
     				  
+    				    db.transaction(function (tx) {
+    						tx.executeSql("DELETE FROM banner;");
+    						});
+    					
+    					 
+    						    db.transaction(function (tx) {
+    							 tx.executeSql(queryIns,[x],function (tx, res) {},function (e) {alert("ERROR: " + e.message);});
+    						   });
+    					
     				   } ,
     				error: function (jqXHR, textStatus, errorThrown) {
     				     alert("Consulte con los administradores del sistema.");
@@ -156,14 +171,38 @@ function iniciar_banner() {
     			});
     		
     		
+    		
+    		 $(document).on('click', '#btn_iniciar', function(){
+     			
+     			checkConnection();
+
+     		});
+    		
     	 
      }else{
     	 
     	
+    	       db.transaction(function(transaction) {
+    			transaction.executeSql('SELECT * FROM banner WHERE 1=1', [], function (tx, results) {
+    			var banner = "";
+    			var i=0;
+    			var len3 = results.rows.length, i;
+    			
+    			for (i=0; i<=len3-1; i++) {
+    				banner = results.rows.item(i).nombre_banner;
+    			}
+    			
+    			$("#banner").html(banner);
+    				 
+    			}, null);
+    			});
+    	 
+    	 
     	
      }
      
     }
+
 
 
 

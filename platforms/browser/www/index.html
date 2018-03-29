@@ -7,17 +7,34 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
-        
+		
+		 <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+       
+       
         <script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
 	        
 	        
-	
+	<style type="text/css">
+	#header{
+	  position: fixed;
+	  top:0;
+	  width:100%;
+	  height:12%;
+	  background-color:#C0DFCA;
+	  color:#FFFFFF;
+	  padding:0px;
+	}
+	</style>
         
         
-         <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        
     		
         
       
@@ -25,18 +42,17 @@
 	 </head>
 	 
 	 <body class="login" >
-	 
-	 <div  align="center">
-      <a class="hiddenanchor" id="signup"></a>
+	 <img id="header" src="img/logo_inicio.jpg" />
+	 <br>
+	 <div  align="center" style="margin-top:16%;">
+	  <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
 
-      <div class="login_wrapper">
+      <div class="login_wrapper" >
         <div class="animate form login_form">
           <section class="login_content">
-           <div style="margin-top: 0%" align="center" >
-    			<img src="img/bcaprem.png" width="80%" height="100" vspace="25"/>
-    	   </div>
-            <h3>Iniciar Sesión</h3>
+       	  <div id="banner" ></div>
+       	    <h3>Iniciar Sesión</h3>
               <div style="width:80%">
                 <input id="cedula"  name="cedula" type="text" class="form-control" placeholder="cedula.."/>
               </div>
@@ -58,7 +74,7 @@
            
           </section>
           
-           <div id="banner" style="margin-top:30px;"></div>
+           
         </div>
       </div>
     </div>
@@ -75,7 +91,7 @@
 	
 	$(document).ready( function (){
 		   pone_espera();
-		   iniciar_banner();
+		  
 	});
 		
 	function pone_espera(){
@@ -98,7 +114,9 @@
 	 
 	}
 	</script>
+	<script src="js/database.js"></script>
 	<script src="js/iniciar.js"></script>
+	
 	<!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
    
