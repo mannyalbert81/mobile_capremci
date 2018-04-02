@@ -35,14 +35,13 @@
         
         
         
-    		
-        
+
       
 	
 	 </head>
 	 
-	 <body class="login" >
-	 <img id="header" src="img/logo_inicio.jpg" />
+	 <body class="login" bgcolor="#ebefec">
+	 <img id="header" src="img/logo_inicioverde2.jpg" />
 	 <br>
 	 <div  align="center" style="margin-top:16%;">
 	  <a class="hiddenanchor" id="signup"></a>
@@ -52,17 +51,15 @@
         <div class="animate form login_form">
           <section class="login_content">
        	  <div id="banner" ></div>
-       	    <h3>Iniciar Sesión</h3>
-              <div style="width:80%">
+       	    
+              <div style="width:80%;  margin-top: 10px;">
                 <input id="cedula"  name="cedula" type="text" class="form-control" placeholder="cedula.."/>
+                
               </div>
               <div style="width:80%">
                 <input id="clave" name="clave"   type="password" class="form-control" placeholder="password.."/>
               </div>
-              <div style="width:80%">
-              	<button type="button" id="btn_iniciar" class="btn btn-success" ><i class="fa fa-unlock fa-spin" aria-hidden="true"></i> Login</button>
-               </div>
-
+           
               <div class="clearfix"></div>
 			   <div class="separator">
                 <div class="clearfix"></div>
@@ -76,14 +73,27 @@
           
            
         </div>
-      </div>
+      
+      	<div class= "background-color:#aecab3;">
+      		<fieldset data-role="controlgroup" data-type="horizontal">
+	    		<button type="button" id="btn_iniciar"  data-icon="user" data-iconpos="top"  data-theme="a"> Ingresar</button>
+	    		
+				
+			</fieldset>
+        	<fieldset data-role="controlgroup" data-type="horizontal">
+	    		<button type="button" id="btn_iniciar"  data-icon="phone" data-iconpos="top"  data-theme="a"> Contacto</button>
+				<button type="button" id="btn_iniciar"  data-icon="star" data-iconpos="top"  data-theme="a"> Comptartir</button>
+			</fieldset>
+      	
+      	</div>
+      	
+      
+      
+      
     </div>
 	 
-	 
-	 
-	
-	 
-	 
+
+	 </div>
 	
 	
 	<script src="js/jquery.blockUI.js"></script>
@@ -110,7 +120,7 @@
 	     		}
 	 });
 		
-	 setTimeout($.unblockUI, 2000); 
+	 setTimeout($.unblockUI, 1000); 
 	 
 	}
 	</script>
