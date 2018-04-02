@@ -110,7 +110,7 @@ function checkConnection() {
     	 alert('Tu dispositivo no tiene internet.');
     	 window.location.href = "index.html";
     	 $("#cedula").val("");
-	    	$("#clave").val("");
+	     $("#clave").val("");
      }
      
     }
