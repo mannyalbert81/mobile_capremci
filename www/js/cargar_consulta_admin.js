@@ -47,7 +47,7 @@ function checkConnection1() {
 
 function pone_cta_individual(cedula){
 	var base_url = 'http://18.218.148.189:80/webservices/';
-	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+	var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 	
 	       $.ajax({
 	    	   type: 'POST',
@@ -69,7 +69,7 @@ function pone_cta_individual(cedula){
 
 function pone_cta_desembolsar(cedula){
 	var base_url = 'http://18.218.148.189:80/webservices/';
-	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+	var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 	
 	       $.ajax({
 	    	   type: 'POST',
@@ -90,7 +90,7 @@ function pone_cta_desembolsar(cedula){
 
 function pone_credito_ordinario(cedula){
 	var base_url = 'http://18.218.148.189:80/webservices/';
-	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+	var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 	
 	       $.ajax({
 	    	   type: 'POST',
@@ -110,7 +110,7 @@ function pone_credito_ordinario(cedula){
 
  function pone_credito_emergente(cedula){
 	var base_url = 'http://18.218.148.189:80/webservices/';
-	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+	var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 	
 	       $.ajax({
 	    	   type: 'POST',
@@ -131,7 +131,7 @@ function pone_credito_ordinario(cedula){
  
  function pone_credito_2x1(cedula){
 		var base_url = 'http://18.218.148.189:80/webservices/';
-		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+		var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 		
 		       $.ajax({
 		    	   type: 'POST',
@@ -150,7 +150,7 @@ function pone_credito_ordinario(cedula){
 
  function pone_credito_hipotecario(cedula){
 		var base_url = 'http://18.218.148.189:80/webservices/';
-		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+		var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 		
 		       $.ajax({
 		    	   type: 'POST',
@@ -172,7 +172,7 @@ function pone_credito_ordinario(cedula){
  
  function pone_acuerdo_pago(cedula){
 		var base_url = 'http://18.218.148.189:80/webservices/';
-		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+		var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 		
 		       $.ajax({
 		    	   type: 'POST',
@@ -194,7 +194,7 @@ function pone_credito_ordinario(cedula){
  
  function pone_credito_refinanciamiento(cedula){
 		var base_url = 'http://18.218.148.189:80/webservices/';
-		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
+		var pag_service = 'CargarConsultaAdminService.php?jsoncallback=?' ;
 		
 		       $.ajax({
 		    	   type: 'POST',

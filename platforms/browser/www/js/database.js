@@ -7,7 +7,7 @@ function ini()
 
 //<!--Calling onDeviceReady method-->
 document.addEventListener("deviceready", onDeviceReady, false);
-var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //will create database Dummy_DB or open it
+var db = window.openDatabase("capremci.db", "1.0", "MY DB", 10000); //will create database Dummy_DB or open it
 
 
 function onDeviceReady() {
