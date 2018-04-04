@@ -8,7 +8,7 @@
 		<script src="js/jquery.js"></script>
 	    <script type="text/javascript" src="cordova.js"></script>
 	      
-	    <script src="js/cargar_cuenta_individual_admin.js"></script>
+	    <script src="js/cargar_perfil.js"></script>
         <script type="text/javascript" src="vendors/table-sorter/jquery.tablesorter.js"></script>
        
       	    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="perfil_admin.html"> Perfil Usuario</a></li>
+                    <li><a href="perfil.html"> Perfil Usuario</a></li>
                     <li><a href="index.html"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
                   </ul>
                 </li>
@@ -85,12 +85,21 @@
                 <h3>General</h3>
                 <ul class="nav side-menu">
                    
-              
-                  
-                 <li><a><i class="fa fa-users"></i> Servicios en Linea <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-address-card"></i> Consulta de Cuentas <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
-                      <li><a href="Usuarios.html">Usuarios</a></li>
-                      <li><a href="Sesiones.html">Sesiones</a></li>
+                      <li><a href="SaldosCuentaIndividual.html">Cuenta Individual</a></li>
+                      <li><a href="SaldosCuentaDesembolsar.html">Cuenta Desembolsar</a></li>
+                      </ul>
+                  </li>
+                  
+                  <li><a><i class="fa fa-address-card-o"></i> Consulta de Créditos <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                      <li><a href="CreditoOrdinario.html">Crédito Ordinario</a></li>
+                      <li><a href="CreditoEmergente.html">Crédito Emergente</a></li>
+                      <li><a href="Credito2x1.html">Crédito 2 x 1</a></li>
+                      <li><a href="CreditoHipotecario.html">Crédito Hipotecario</a></li>
+                      <li><a href="AcuerdoPago.html">Acuerdo de Pago</a></li>
+                      <li><a href="CreditoRefinanciamiento.html">Crédito Refinanciamiento</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -112,16 +121,16 @@
 	        <div class="container">
 	         <section class="content-header">
 	         <ol class=" pull-right breadcrumb">
-	         <li><a href="BienvenidaAdmin.html"><i class="fa fa-dashboard"></i> Home</a></li>
-	         <li class="active">Cuenta Individual</li>
+	         <li><a href="Bienvenida.html"><i class="fa fa-dashboard"></i> Home</a></li>
+	         <li class="active">Perfil Usuario</li>
 	         </ol>
 	         </section>
             
             
-             <div class="col-md-12 col-lg-12 col-xs-12">
+            <div class="col-md-12 col-lg-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2><small>Cuenta Individual (Desde Enero 2011)</small></h2>
+                    <h2>Perfil<small>Usuario</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -132,19 +141,61 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                  
-                    <div class="pull-right" style="margin-right:11px;">
-					<input type="text" value="" class="form-control" id="search" name="search" onkeyup="load_cta_individual(1)" placeholder="search.."/>
-					</div>
+                    
+                                <div class="col-lg-2 col-xs-12 col-md-2" style="text-align: center;">
+					            <img id="fotografia_usuarios" alt="" width="100px" height="120px">
+								</div>
+								
+                    		    <div class="col-lg-2 col-xs-12 col-md-2">
+                    		    <div class="form-group">
+                                                      <label for="cedula_usuarios" class="control-label">Cedula:</label>
+                                                      <input type="number" class="form-control" id="cedula_usuarios" name="cedula_usuarios" value=""  placeholder="ci-ruc.." readonly>
+                                                      <div id="mensaje_cedula_usuarios" class="errores"></div>
+                                </div>
+                                </div>
+                    		    
+                    		    
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <label for="nombre_usuarios" class="control-label">Nombres:</label>
+                                                      <input type="text" class="form-control" id="nombre_usuarios" name="nombre_usuarios" value="" placeholder="nombres.." readonly>
+                                                      <div id="mensaje_nombre_usuarios" class="errores"></div>
+                                </div>
+                                </div>
+                    		   
+                    	   
+                            		<div class="col-lg-4 col-xs-12 col-md-4">
+                        		    <div class="form-group">
+                                                          <label for="correo_usuarios" class="control-label">Correo:</label>
+                                                          <input type="email" class="form-control" id="correo_usuarios" name="correo_usuarios" value="" placeholder="email.." readonly>
+                                                          <div id="mensaje_correo_usuarios" class="errores"></div>
+                                    </div>
+                        		    </div>
+                        		    
+                        		   
+                        		   <div class="col-lg-4 col-xs-12 col-md-4">
+                        		    <div class="form-group">
+                                                          <label for="nombre_rol" class="control-label">Rol:</label>
+                                                          <input type="text" class="form-control" id="nombre_rol" name="nombre_rol" value="" placeholder="rol.." readonly>
+                                                          <div id="mensaje_nombre_rol" class="errores"></div>
+                                    </div>
+                        		    </div>
+                        		    
+                        		 
+                                   <div class="col-lg-4 col-xs-12 col-md-4">
+                        		    <div class="form-group">
+                                                          <label for="nombre_estado" class="control-label">Estado:</label>
+                                                          <input type="text" class="form-control" id="nombre_estado" name="nombre_estado" value="" placeholder="estado.." readonly>
+                                                          <div id="mensaje_nombre_estado" class="errores"></div>
+                                    </div>
+                        		    </div>
+                                
+                               
 					
-					
-					<div id="load_cta_individual_registrados" ></div>	
-					<div id="cta_registrados"></div>	
                   
                   </div>
                 </div>
               </div>
-           
             
             </div>
           
