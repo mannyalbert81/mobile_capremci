@@ -22,7 +22,6 @@ var fotografia_usuarios = localStorage.getItem('fotografia_usuarios');
 
 
 
-var online;
 function checkConnection1(){
       
 	 imgficha = 'data:image/png;base64,'+fotografia_usuarios;
@@ -30,29 +29,11 @@ function checkConnection1(){
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	
 	 
-	    var networkState = navigator.network.connection.type;
-	    var states = {};
-	    
-	    states[Connection.UNKNOWN]  = '1';  //Conexión desconocida;
-	    states[Connection.ETHERNET] = '1';  //Conexión ethernet;
-	    states[Connection.WIFI]     = '1';  //Conexión WiFi';
-	    states[Connection.CELL_2G]  = '1';  //Conexión movil 2G';
-	    states[Connection.CELL_3G]  = '1';  //Conexión movil 3G';
-	    states[Connection.CELL_4G]  = '1';  //Conexión movil 4G';
-	    states[Connection.NONE]     = '0';  //Sin conexión';
-	      
-	    online=states[networkState];
-	   
-	     if (online=='1'){
+	  
 	 
 	      load_acuerdo_pago(1);
 	 
-	     }else{
-	    	 alert('Tu dispositivo no tiene internet.');
-	    	 window.location.href = "index.html";
-	    	 $("#cedula").val("");
-		     $("#clave").val("");
-	     }
+	     
 	 
    }
 
