@@ -19,8 +19,11 @@ function checkConnection1() {
 	
 	 imgficha = 'data:image/png;base64,'+fotografia_usuarios;
 	 $("#fotografia_usuarios").attr({'src':imgficha});
+	 $("#nombre_usuarios").html(nombre_usuarios);
+	 
+	 $("#fotografia_usuarios_2").attr({'src':imgficha});
 	 $("#cedula_usuarios").val(cedula);
-	 $("#nombre_usuarios").val(nombre_usuarios);
+	 $("#nombre_usuarios_2").val(nombre_usuarios);
 	 $("#correo_usuarios").val(correo_usuarios);
 	 
 	 
