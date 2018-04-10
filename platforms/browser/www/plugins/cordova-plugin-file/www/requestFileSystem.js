@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-file.requestFileSystem", function(require, exports, module) { /*
+cordova.define("cordova-plugin-file.requestFileSystem", function(require, exports, module) { cordova.define("cordova-plugin-file.requestFileSystem", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -80,5 +80,7 @@ cordova.define("cordova-plugin-file.requestFileSystem", function(require, export
 
     module.exports = requestFileSystem;
 })();
+
+});
 
 });

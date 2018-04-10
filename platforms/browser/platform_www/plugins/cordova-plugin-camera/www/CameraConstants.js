@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-camera.Camera", function(require, exports, module) { /*
+cordova.define("cordova-plugin-camera.Camera", function(require, exports, module) { cordova.define("cordova-plugin-camera.Camera", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -86,5 +86,7 @@ module.exports = {
       FRONT: 1
   }
 };
+
+});
 
 });

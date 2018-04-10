@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-media-capture.CaptureVideoOptions", function(require, exports, module) { /*
+cordova.define("cordova-plugin-media-capture.CaptureVideoOptions", function(require, exports, module) { cordova.define("cordova-plugin-media-capture.CaptureVideoOptions", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -32,5 +32,7 @@ var CaptureVideoOptions = function(){
 };
 
 module.exports = CaptureVideoOptions;
+
+});
 
 });

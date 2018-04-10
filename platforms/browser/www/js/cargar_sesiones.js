@@ -17,7 +17,10 @@ function checkConnection1() {
 	 $("#fotografia_usuarios").attr({'src':imgficha});
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	
-	 load_sesiones(1);
+	 
+	   
+	 
+	    	 	load_sesiones(1);
 	 
 	 
 	              $("#buscar").click(function() 
@@ -71,7 +74,7 @@ function checkConnection1() {
 				    });
 	 
 	 
-	 
+	    
 	 
    }
 

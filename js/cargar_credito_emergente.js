@@ -17,7 +17,10 @@ function checkConnection1() {
 	 $("#fotografia_usuarios").attr({'src':imgficha});
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	
-	 load_credito_emergente(1);
+	   
+	
+	    	 load_credito_emergente(1);
+	    
 	 
    }
 

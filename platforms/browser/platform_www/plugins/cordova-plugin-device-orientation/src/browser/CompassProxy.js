@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-device-orientation.CompassProxy", function(require, exports, module) { /*
+cordova.define("cordova-plugin-device-orientation.CompassProxy", function(require, exports, module) { cordova.define("cordova-plugin-device-orientation.CompassProxy", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -41,5 +41,7 @@ var Compass = {
 
 module.exports = Compass;
 require('cordova/exec/proxy').add('Compass', Compass);
+
+});
 
 });

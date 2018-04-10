@@ -9,17 +9,18 @@ var nombre_usuarios = localStorage.getItem('nombre_usuarios');
 var fotografia_usuarios = localStorage.getItem('fotografia_usuarios');
 
 
+
 function checkConnection1() {
         
 	
 	 imgficha = 'data:image/png;base64,'+fotografia_usuarios;
 	 $("#fotografia_usuarios").attr({'src':imgficha});
-	
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	 
-	 pone_users();
-	 cargar_sesiones();
-	
+	 
+		 pone_users();
+		 cargar_sesiones();
+	    
      
    }
 
@@ -64,3 +65,4 @@ function cargar_sesiones(){
 	              });
 	     
 	  		}
+

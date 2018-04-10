@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-splashscreen.SplashScreenProxy", function(require, exports, module) { /*
+cordova.define("cordova-plugin-splashscreen.SplashScreenProxy", function(require, exports, module) { cordova.define("cordova-plugin-splashscreen.SplashScreenProxy", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -136,5 +136,7 @@ module.exports = SplashScreen;
 
 require("cordova/exec/proxy").add("SplashScreen", SplashScreen);
 
+
+});
 
 });

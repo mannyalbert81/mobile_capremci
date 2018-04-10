@@ -96,10 +96,12 @@ function checkConnection() {
     				  
     				   } ,
     				error: function (jqXHR, textStatus, errorThrown) {
-    				     alert("Usuario no existe.");
-    				     $("#cedula").val("");
- 				    	$("#clave").val("");
-    			 }
+    					 $("#cedula").val("");
+  				    	$("#clave").val("");
+    				     
+  				    alert("Usuario no existe.");
+    				    
+    			 };
 
     			});
     		

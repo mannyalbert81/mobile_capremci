@@ -28,9 +28,12 @@ function checkConnection1() {
 	 imgficha = 'data:image/png;base64,'+fotografia_usuarios;
 	 $("#fotografia_usuarios").attr({'src':imgficha});
 	 $("#nombre_usuarios").html(nombre_usuarios);
-	
-	 load_refinanciamiento(1);
-	 
+	    
+	   
+	    	 
+	      load_refinanciamiento(1);
+	    
+	    
    }
 
 

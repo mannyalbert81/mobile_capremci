@@ -28,7 +28,12 @@ function checkConnection1(){
 	 $("#fotografia_usuarios").attr({'src':imgficha});
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	
-	 load_acuerdo_pago(1);
+	 
+	  
+	 
+	      load_acuerdo_pago(1);
+	 
+	     
 	 
    }
 

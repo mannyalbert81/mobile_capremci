@@ -28,8 +28,10 @@ function checkConnection1() {
 	 $("#fotografia_usuarios").attr({'src':imgficha});
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	
-	 load_cta_desembolsar(1);
-	 
+	   
+	  
+	    	 load_cta_desembolsar(1);
+	    
    }
 
 

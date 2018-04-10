@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-file.browserFileProxy", function(require, exports, module) { /*
+cordova.define("cordova-plugin-file.browserFileProxy", function(require, exports, module) { cordova.define("cordova-plugin-file.browserFileProxy", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -982,5 +982,7 @@ cordova.define("cordova-plugin-file.browserFileProxy", function(require, exports
 
     require("cordova/exec/proxy").add("File", module.exports);
 })();
+
+});
 
 });

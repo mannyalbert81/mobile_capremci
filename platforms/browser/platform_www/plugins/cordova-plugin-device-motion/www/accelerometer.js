@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-device-motion.accelerometer", function(require, exports, module) { /*
+cordova.define("cordova-plugin-device-motion.accelerometer", function(require, exports, module) { cordova.define("cordova-plugin-device-motion.accelerometer", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -200,5 +200,7 @@ var accelerometer = {
     }
 };
 module.exports = accelerometer;
+
+});
 
 });

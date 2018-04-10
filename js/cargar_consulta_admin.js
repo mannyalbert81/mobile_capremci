@@ -27,19 +27,20 @@ function checkConnection1() {
 	
 	 imgficha = 'data:image/png;base64,'+fotografia_usuarios;
 	 $("#fotografia_usuarios").attr({'src':imgficha});
-	
 	 $("#nombre_usuarios").html(nombre_usuarios);
 	 
-	 
+	   
 	
-	pone_cta_individual(cedula_participe);
-	pone_cta_desembolsar(cedula_participe);
-	pone_credito_ordinario(cedula_participe);
-	pone_credito_emergente(cedula_participe);
-	pone_credito_2x1(cedula_participe);
-	pone_credito_hipotecario(cedula_participe);
-	pone_acuerdo_pago(cedula_participe);
-	pone_credito_refinanciamiento(cedula_participe);
+			pone_cta_individual(cedula_participe);
+			pone_cta_desembolsar(cedula_participe);
+			pone_credito_ordinario(cedula_participe);
+			pone_credito_emergente(cedula_participe);
+			pone_credito_2x1(cedula_participe);
+			pone_credito_hipotecario(cedula_participe);
+			pone_acuerdo_pago(cedula_participe);
+			pone_credito_refinanciamiento(cedula_participe);
+			
+	   
      
     }
 
