@@ -50,8 +50,6 @@
       <div class="login_wrapper" >
         <div class="animate form login_form">
           <section class="login_content">
-       	  <div id="banner" ></div>
-       	    
               <div style="width:80%;  margin-top: 10px;">
                 <input id="cedula"  name="cedula" type="text" class="form-control" placeholder="cedula.."/>
                 
@@ -66,9 +64,7 @@
                 <div>
                 </div>
               </div>
-                   		   
-           
-           
+ 
           </section>
           
            
@@ -81,9 +77,10 @@
 				
 			</fieldset>
         	<fieldset data-role="controlgroup" data-type="horizontal">
-	    		<button type="button" id="btn_iniciar"  data-icon="phone" data-iconpos="top"  data-theme="a"> Contacto</button>
+	    		<button type="button" id="btn_maps"  onclick="location.href='Map.html'"  data-icon="phone" data-iconpos="top"  data-theme="a"> Contacto</button>
 				<button type="button" id="btn_iniciar"  data-icon="star" data-iconpos="top"  data-theme="a"> Comptartir</button>
 			</fieldset>
+      	
       	
       	</div>
       	
@@ -124,6 +121,64 @@
 	 
 	}
 	</script>
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyDyu4jW-edLYPnTIBRqHtUxisvp3NRVBps"></script>
+    	<script type="text/javascript">
+    		// When map page opens get location and display map
+    		$('.page-map').live("pagecreate", function() {
+    			if(navigator.geolocation) {
+    				navigator.geolocation.getCurrentPosition(function(position){
+    					initialize(position.coords.latitude,position.coords.longitude);
+    				});
+    			}
+    		});
+    		
+    		function initialize(lat,lng) {
+    			var latlng = new google.maps.LatLng(-0.2070675, -78.4923492);
+    	
+
+    			var myOptions = {
+    				zoom: 20,
+    				center: latlng,
+    				mapTypeId: google.maps.MapTypeId.ROADMAP
+    		   };
+    			var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+    			
+    	        var contentString = '<div data-role="content" id="content">'+
+                '<div 	id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">Capremci</h1>'+
+                '<div data-role="content" id="bodyContent">'+
+                '<p><b>Dirección: </b>Baquerizo Moreno E-978 y Leonidas Plaza'+
+                '<p><b>Email:</b>info@capremci.com.ec'+
+                '<p><b>Teléfono:</b>02-3828870'+
+                '<p>Web Capremci <a href="https://www.capremci.com.ec">'+
+                '</div>'+
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+
+    			
+    			 var marker = new google.maps.Marker({
+    	               position: new google.maps.LatLng(-0.2070675, -78.4923492),
+    	               map: map,
+    	               icon:'img/marcador2.png',
+    	               title: 'Capremci'
+
+    	            }); 
+    			 
+    			 
+    			 marker.addListener('click', function() {
+    		          infowindow.open(map, marker);
+    		        });
+
+
+    			 marker.setMap(map);
+    			 
+    		   
+    		}
+    	</script>
 	<script src="js/database.js"></script>
 	<script src="js/iniciar.js"></script>
 	
