@@ -1,25 +1,23 @@
 
-$(document).on("ready",onDeviceReady);
+$(document).on("ready", onDeviceReady);
 
-document.addEventListener("deviceready", onDeviceReady, false);
-var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
+//document.addEventListener("deviceready", onDeviceReady, false);
+var db = window.openDatabase("capremci.db", "1.0", "MY DB", 10000); //crea o abre la base
 
 
-function onDeviceReady() 
-{
+function onDeviceReady() {
 	
 	iniciar_banner();
-	
 	
 }
 
 var online;
-
-
 function checkConnection() {
         
 	var networkState = navigator.network.connection.type;
     var states = {};
+
+   
     
     states[Connection.UNKNOWN]  = '1';  //Conexión desconocida;
     states[Connection.ETHERNET] = '1';  //Conexión ethernet;
@@ -120,13 +118,11 @@ function checkConnection() {
 
 
 
-
-
-function iniciar_banner() {
+function iniciar_banner(){
     
 	var networkState = navigator.network.connection.type;
     var states = {};
-    
+  
     states[Connection.UNKNOWN]  = '1';  //Conexión desconocida;
     states[Connection.ETHERNET] = '1';  //Conexión ethernet;
     states[Connection.WIFI]     = '1';  //Conexión WiFi';
@@ -139,8 +135,6 @@ function iniciar_banner() {
    
      if (online=='1'){
     	 	
-    	 
-    	
     	 
     		var base_url = 'http://18.218.148.189:80/webservices/';
     		var pag_service = 'LoginService.php' ;
@@ -165,6 +159,7 @@ function iniciar_banner() {
     							 tx.executeSql(queryIns,[x],function (tx, res) {},function (e) {alert("ERROR: " + e.message);});
     						   });
     					
+    						  
     				   } ,
     				error: function (jqXHR, textStatus, errorThrown) {
     				     alert("Consulte con los administradores del sistema.");
@@ -204,7 +199,6 @@ function iniciar_banner() {
      }
      
     }
-
 
 
 
