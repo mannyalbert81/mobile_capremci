@@ -31,6 +31,9 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "jquer.com"
         },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "jquer.com"
+        },
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "jquer.com"
         },
