@@ -5,10 +5,7 @@ function onDeviceReady()
 {
 	
 	 $(document).on('click', '#enviar_email', function(){
-			
-		
-		 
-		 
+		            var online;
 			    	var regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
 			    	var validaFecha = /([0-9]{4})\-([0-9]{2})\-([0-9]{2})/;
 
@@ -16,20 +13,20 @@ function onDeviceReady()
 			  		var correo = $("#correo").val();
 			  		var asunto = $("#asunto").val();
 			  		var mensaje = $("#mensaje").val();
-			    	var error="";
+			    	var error="FALSE";
 			    	
 			  		if (nombre == "")
 			    	{
 				    	
 			    		$("#mensaje_nombre").text("Introduzca un Nombre");
 			    		$("#mensaje_nombre").fadeIn("slow"); //Muestra mensaje de error
-			    		error="SI";
+			    		error="TRUE";
 			            return false;
 				    }
 			    	else 
 			    	{
 			    		$("#mensaje_nombre").fadeOut("slow"); //Muestra mensaje de error
-			    		error="NO";
+			    		
 					}
 					
 			  		if (correo == "")
@@ -38,19 +35,19 @@ function onDeviceReady()
 			    		$("#mensaje_correo").text("Introduzca un correo");
 			    		$("#mensaje_correo").fadeIn("slow"); //Muestra mensaje de error
 			            return false;
-			            error="SI";
+			            error="TRUE";
 				    }
 			    	else if (regex.test($('#correo').val().trim()))
 			    	{
 			    		$("#mensaje_correo").fadeOut("slow"); //Muestra mensaje de error
-			    		error="NO";
+			    		
 					}
 			    	else 
 			    	{
 			    		$("#mensaje_correo").text("Introduzca un correo Valido");
 			    		$("#mensaje_correo").fadeIn("slow"); //Muestra mensaje de error
 			            return false;	
-			            error="SI";
+			            error="TRUE";
 				    }
 									    
 			  		if (asunto == "")
@@ -59,12 +56,12 @@ function onDeviceReady()
 			    		$("#mensaje_asunto").text("Introduzca un Asunto");
 			    		$("#mensaje_asunto").fadeIn("slow"); //Muestra mensaje de error
 			            return false;
-			            error="SI";
+			            error="TRUE";
 				    }
 			    	else 
 			    	{
 			    		$("#mensaje_asunto").fadeOut("slow"); //Muestra mensaje de error
-			    		error="NO";
+			    		
 					}
 					
 			  		
@@ -74,45 +71,50 @@ function onDeviceReady()
 			    		$("#mensaje_mensaje").text("Introduzca un Mensaje");
 			    		$("#mensaje_mensaje").fadeIn("slow"); //Muestra mensaje de error
 			            return false;
-			            error="SI";
+			            error="TRUE";
 				    }
 			    	else 
 			    	{
 			    		$("#mensaje_mensaje").fadeOut("slow"); //Muestra mensaje de error
-			    		error="NO";
+			    		
 					}
 			  		
 			  		
-			  		if(error=="NO"){
-			  			
+			  		if(error=="FALSE" ){
+			  		
 			  			checkConnection();
+			  			
+			  		}else{
+			  			
+			  			
 			  		}
 			  	
 		});
 	 
 	 
 
-     $( "#nombre" ).focus(function() {
-		  $("#mensaje_nombre").fadeOut("slow");
-	    });
-		
-     $( "#correo" ).focus(function() {
-		  $("#mensaje_correo").fadeOut("slow");
-	    });
-
-     $( "#asunto" ).focus(function() {
-			  $("#mensaje_asunto").fadeOut("slow");
-		 });
+	     $( "#nombre" ).focus(function() {
+			  $("#mensaje_nombre").fadeOut("slow");
+		    });
+			
+	     $( "#correo" ).focus(function() {
+			  $("#mensaje_correo").fadeOut("slow");
+		    });
+	
+	     $( "#asunto" ).focus(function() {
+			 $("#mensaje_asunto").fadeOut("slow");
+			});
 			
 	     $( "#mensaje" ).focus(function() {
-			  $("#mensaje_mensaje").fadeOut("slow");
+			 $("#mensaje_mensaje").fadeOut("slow");
 		  });
 	
 }
 
-var online;
+
 function checkConnection() {
-        
+       
+	var online="";
 	var networkState = navigator.network.connection.type;
     var states = {};
    
@@ -144,7 +146,7 @@ function checkConnection() {
  			   dataType: 'json',
  			   success: function (x){
  				  
- 				   alert(x);
+ 				 $("#respuesta_servidor").html(x);
  				 $("#nombre").val("");
  			  	 $("#correo").val("");
  			  	 $("#asunto").val("");

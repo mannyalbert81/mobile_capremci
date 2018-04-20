@@ -1,14 +1,12 @@
 $(document).on("ready",onDeviceReady);
 
 document.addEventListener("deviceready", onDeviceReady, false);
-var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
+var db = window.openDatabase("capremci.db", "1.0", "MY DB", 10000); //crea o abre la base
 
 
 function onDeviceReady() 
 {
-	
 	iniciar_banner();
-	
 	
 }
 
@@ -135,10 +133,7 @@ function iniciar_banner() {
     online=states[networkState];
    
      if (online=='1'){
-    	 	
-    	 
-    	
-    	 
+    	  
     		var base_url = 'http://18.218.148.189:80/webservices/';
     		var pag_service = 'LoginService.php' ;
     		var queryIns = 'INSERT INTO banner(nombre_banner) VALUES (?)';
@@ -173,14 +168,61 @@ function iniciar_banner() {
     		
     		 $(document).on('click', '#btn_iniciar', function(){
      			
-     			checkConnection();
+    			 var cedula = $("#cedula").val();
+    	    	 var clave = $("#clave").val();
+    	    	 var error="";
 
+    	    	   if (cedula == "")
+			    	{
+				    	
+			    		$("#mensaje_cedula").text("Introduzca Cedula");
+			    		$("#mensaje_cedula").fadeIn("slow"); //Muestra mensaje de error
+			    		error="SI";
+			            return false;
+				    }
+			    	else 
+			    	{
+			    		$("#mensaje_cedula").fadeOut("slow"); //Muestra mensaje de error
+			    		error="NO";
+					}
+    	    	   
+    	    	   
+    	    	   if (clave == "")
+			    	{
+				    	
+			    		$("#mensaje_clave").text("Introduzca Clave");
+			    		$("#mensaje_clave").fadeIn("slow"); //Muestra mensaje de error
+			    		error="SI";
+			            return false;
+				    }
+			    	else 
+			    	{
+			    		$("#mensaje_clave").fadeOut("slow"); //Muestra mensaje de error
+			    		error="NO";
+					}
+    	    	 
+    	    	   
+    	    	   if(error=="NO"){
+			  			
+    	    		   checkConnection();
+			  		}
+     
+    	    	   
      		});
+    		 
+    		 
+    		 $( "#cedula" ).focus(function() {
+    			  $("#mensaje_cedula").fadeOut("slow");
+    		    });
+    			
+    	     $( "#clave" ).focus(function() {
+    			  $("#mensaje_clave").fadeOut("slow");
+    		    });
+
     		
     	 
      }else{
     	 
-    	
     	       db.transaction(function(transaction) {
     			transaction.executeSql('SELECT * FROM banner WHERE 1=1', [], function (tx, results) {
     			var banner = "";
@@ -195,10 +237,69 @@ function iniciar_banner() {
     				 
     			}, null);
     			});
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       $(document).on('click', '#btn_iniciar', function(){
+        			
+      			 var cedula = $("#cedula").val();
+      	    	 var clave = $("#clave").val();
+      	    	 var error="";
+
+      	    	   if (cedula == "")
+  			    	{
+  				    	
+  			    		$("#mensaje_cedula").text("Introduzca Cedula");
+  			    		$("#mensaje_cedula").fadeIn("slow"); //Muestra mensaje de error
+  			    		error="SI";
+  			            return false;
+  				    }
+  			    	else 
+  			    	{
+  			    		$("#mensaje_cedula").fadeOut("slow"); //Muestra mensaje de error
+  			    		error="NO";
+  					}
+      	    	   
+      	    	   
+      	    	   if (clave == "")
+  			    	{
+  				    	
+  			    		$("#mensaje_clave").text("Introduzca Clave");
+  			    		$("#mensaje_clave").fadeIn("slow"); //Muestra mensaje de error
+  			    		error="SI";
+  			            return false;
+  				    }
+  			    	else 
+  			    	{
+  			    		$("#mensaje_clave").fadeOut("slow"); //Muestra mensaje de error
+  			    		error="NO";
+  					}
+      	    	 
+      	    	   
+      	    	   if(error=="NO"){
+  			  			
+      	    		 alert('Tu dispositivo no tiene internet.');
+      	      	    $("#cedula").val("");
+      	  	    	$("#clave").val("");
+  			  		}
+       
+      	    	   
+       		});
+      		 
+      		 
+      		 $( "#cedula" ).focus(function() {
+      			  $("#mensaje_cedula").fadeOut("slow");
+      		    });
+      			
+      	     $( "#clave" ).focus(function() {
+      			  $("#mensaje_clave").fadeOut("slow");
+      		    });
+
     	 
-    	 
-    	
-     }
+     	}
      
     }
 

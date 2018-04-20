@@ -9,11 +9,11 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		
-	    
+	     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		 <link rel="stylesheet" href="css/estilos.css">
 	   
         <script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery.js"></script>
-		
 		<script type="text/javascript" src="cordova.js"></script> 
 	      
 	   
@@ -56,7 +56,7 @@
         var contentString = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h5 id="firstHeading" class="firstHeading">'+marcadores[i][0]+'</h5>'+
+        '<h3 id="firstHeading" class="firstHeading">'+marcadores[i][0]+'</h3>'+
         '<div id="bodyContent">'+
         '<p><b>Dirección: </b>'+marcadores[i][3]+'.</p>'+
         '</div>'+
@@ -77,41 +77,25 @@
     google.maps.event.addDomListener(window, 'load', initialize);
     
     </script>
-	
-
-	
 	      <style type="text/css">
 		    #mymap {
-		      border:1px solid red;
-		   
-		      height: 500px;
-		        width: 100%;
+		      border:1px solid white;
+		      height: 570px;
+		      width: 100%;
 		    }
 		  </style>
-	
-	
 	
 	 </head>
 	 
 	 <body >
 	
-       	    <img style="width:100%"; src="img/logo_inicio.jpg" /> 
+       	    <img style="width:100%" src="img/logo_inicio.jpg" /> 
        	    
        	
-       	    
-       	    
-       	        
-            <div style="padding-right: 15px; padding-left: 15px;">
-             <div class="col-xs-12 col-md-12 col-lg-12">
-             <div class="row">
-      			<div id="mymap"></div>
+       	    	<div id="mymap"></div>
       			
-             </div>
-		     </div>
-		    </div>
-				
 	 
-	
+	 <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
  
 </body>
 
