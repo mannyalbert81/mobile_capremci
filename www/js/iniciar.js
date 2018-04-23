@@ -1,7 +1,12 @@
 $(document).on("ready",onDeviceReady);
 
+<<<<<<< HEAD
 //document.addEventListener("deviceready", onDeviceReady, false);
 //var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
+=======
+document.addEventListener("deviceready", onDeviceReady, false);
+var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
+>>>>>>> branch 'master' of https://github.com/mannyalbert81/mobile_capremci.git
 
 
 function onDeviceReady() 
