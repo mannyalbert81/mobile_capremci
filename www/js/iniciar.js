@@ -1,7 +1,7 @@
 $(document).on("ready",onDeviceReady);
 
 document.addEventListener("deviceready", onDeviceReady, false);
-var db = window.openDatabase("capremci.db", "1.0", "MY DB", 10000); //crea o abre la base
+var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
 
 
 function onDeviceReady() 
