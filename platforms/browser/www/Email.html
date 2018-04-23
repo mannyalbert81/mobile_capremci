@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Capremci</title>
+			
+		
+		    <meta charset="utf-8">
+		    <link rel="stylesheet" href="css/estilos.css">
+		   
+		     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		     <script src="js/jquery-3.2.1.js"></script>
+		    <script src="js/jquery.js"></script>
+		    <script type="text/javascript" src="cordova.js"></script>
+		   <script src="js/enviar_email.js"></script>
+		   
+	</head>
+	 
+	 <body>
+	   	    <img style="width:100%" src="img/logo_inicio.jpg" /> 
+       	    
+       	    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-top: 10px;">
+       	      <div class="panel panel-default">
+	         <div class="panel-heading">
+	         <h4><i class='glyphicon glyphicon-envelope'></i> Enviar Email</h4>
+	         </div>
+	         <div class="panel-body">
+       	    
+       	    <div class="row">
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <label for="nombre" class="control-label">Nombres:</label>
+                                                      <input type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="nombres..">
+                                                      <div id="mensaje_nombre" class="errores"></div>
+                                </div>
+                                </div>
+                    		    
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <label for="correo" class="control-label">Email:</label>
+                                                      <input type="email" class="form-control" id="correo" name="correo" value="" placeholder="email..">
+                                                      <div id="mensaje_correo" class="errores"></div>
+                                </div>
+                                </div>
+            </div>
+       	   
+       	   
+       	    <div class="row">
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <label for="asunto" class="control-label">Asunto:</label>
+                                                      <input type="text" class="form-control" id="asunto" name="asunto" value="" placeholder="asunto..">
+                                                      <div id="mensaje_asunto" class="errores"></div>
+                                </div>
+                                </div>
+                    		    
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <label for="mensaje" class="control-label">Mensaje:</label>
+                                                      <textarea class="form-control" id="mensaje" name="mensaje"  placeholder="mensaje.."></textarea>
+                                                      <div id="mensaje_mensaje" class="errores"></div>
+                                </div>
+                                </div>
+                    			
+                    		
+           </div>
+         	  
+         	  
+         	  		<div class="col-lg-12 col-md-12 col-xs-12 " style="text-align: center; margin-top: 10px">
+				  		 <button type="button" id="enviar_email" name="enviar_email" value=""   class="btn btn-success" style="margin-top: 10px;"><i class="glyphicon glyphicon-envelope"></i> Enviar</button>         
+				    </div>
+         	  
+       	    </div>
+       	    </div>
+       	    </div>
+       	   
+            
+            <div class="col-lg-12 col-md-12 col-xs-12">
+            <div id="respuesta_servidor" style="text-align: center;"></div>
+            </div>
+            
+	        <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+		    
+	</body>
+
+</html>

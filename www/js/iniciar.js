@@ -1,12 +1,5 @@
 $(document).on("ready",onDeviceReady);
 
-<<<<<<< HEAD
-//document.addEventListener("deviceready", onDeviceReady, false);
-//var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
-=======
-document.addEventListener("deviceready", onDeviceReady, false);
-var db = window.openDatabase("capremci.db", "1.0", "MY DB", 200000); //crea o abre la base
->>>>>>> branch 'master' of https://github.com/mannyalbert81/mobile_capremci.git
 
 
 function onDeviceReady() 
@@ -14,8 +7,6 @@ function onDeviceReady()
 	iniciar_banner();
 	
 }
-
-
 
 var online;
 
@@ -120,21 +111,6 @@ function checkConnection() {
     }
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 
 
 
@@ -158,7 +134,6 @@ function iniciar_banner() {
     	  
     		var base_url = 'http://18.218.148.189:80/webservices/';
     		var pag_service = 'LoginService.php' ;
-    		//var queryIns = 'INSERT INTO banner(nombre_banner) VALUES (?)';
     		
     		
     		$.ajax({
@@ -168,20 +143,10 @@ function iniciar_banner() {
     			   dataType: 'json',
     			   success: function (x) {
     				 		
-    				   
-    				
-    				   
     				   $("#banner").html(x);
     				  
-    				 /*   db.transaction(function (tx) {
-    						tx.executeSql("DELETE FROM banner");
-    						});
+    				   
     					
-    					 
-    						    db.transaction(function (tx) {
-    							 tx.executeSql(queryIns,[x],function (tx, res) {},function (e) {alert("ERROR: " + e.message);});
-    						   });
-    					*/
     				   } ,
     				error: function (jqXHR, textStatus, errorThrown) {
     				     alert("Consulte con los administradores del sistema.");
@@ -248,25 +213,7 @@ function iniciar_banner() {
     	 
      }else{
     	 
-    	 /*
-    	       db.transaction(function(transaction) {
-    			transaction.executeSql('SELECT * FROM banner WHERE 1=1', [], function (tx, results) {
-    			var banner = "";
-    			var i=0;
-    			var len3 = results.rows.length, i;
-    			
-    			for (i=0; i<=len3-1; i++) {
-    				banner = results.rows.item(i).nombre_banner;
-    			}
-    			
-    			$("#banner").html(banner);
-    				 
-    			}, null);
-    			});
-    	       
-    	      */ 
-    	       
-    	       
+    	     
     	       
     	       
     	       $(document).on('click', '#btn_iniciar', function(){
@@ -328,6 +275,9 @@ function iniciar_banner() {
      	}
      
     }
+
+
+
 
 
 
