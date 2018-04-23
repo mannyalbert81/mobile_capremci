@@ -50,7 +50,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="perfil.html"> Perfil Usuario</a></li>
-                    <li><a href="index.html"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
+                    <li><a id="close"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
                   </ul>
                 </li>
                </ul>
@@ -207,6 +207,13 @@
         
     </div>
     </div>
+   
+   
+     <script type="text/javascript">
+		$('#close').click(function(){navigator.app.exitApp();})
+		</script> 
+   
+   
    
    <!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
