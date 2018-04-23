@@ -64,7 +64,7 @@
 		<div class="left_col scroll-view">
           
           <div class="navbar nav_title" style="border: 0;">
-   			<a href="index.html" class="site_title"><img src="img/logo.png" width="50" height="50"><span> Capremci<small> FCPC</small></span></a>
+   			<a id="close" class="site_title"><img src="img/logo.png" width="50" height="50"><span> Capremci<small> FCPC</small></span></a>
 		  </div>
 
  		 <div class="clearfix"></div>
@@ -156,10 +156,12 @@
     </div>
    
    
-     <script type="text/javascript">
-		$('#close').click(function(){navigator.app.exitApp();})
-		</script> 
-   
+        <script type="text/javascript">
+$('#close').click(function(){
+navigator.app.exitApp();
+localStorage.clear();
+})
+</script> 
    
    <!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>

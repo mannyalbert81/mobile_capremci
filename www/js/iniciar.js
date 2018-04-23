@@ -30,6 +30,7 @@ function checkConnection() {
    
      if (online=='1'){
     	   
+    	 
     	    var cedula = $("#cedula").val();
     		var clave = $("#clave").val();
     		var id_usuarios = "";
@@ -41,6 +42,7 @@ function checkConnection() {
     		var base_url = 'http://18.218.148.189:80/webservices/';
     		var pag_service = 'LoginService.php' ;
     	 
+    		
     		
     		$.ajax({
     			   type: 'POST',
