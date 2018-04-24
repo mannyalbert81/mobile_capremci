@@ -1,0 +1,88 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-filepath": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "jquer.com"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "jquer.com"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "jquer.com"
+        }
+    }
+}
