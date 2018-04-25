@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Capremci</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilos.css">
+        <script src="js/jquery-3.2.1.js"></script>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+	   
+	 </head>
+	 
+	 <body>
+	 <img id="header"  style="width:100%" src="img/logo_inicio.jpg" />
+	 <div id="banner" style="width:100%"></div>
+	 <div  class="col-lg-12 col-xs-12 col-md-12" style="text-align: center;">
+	   	    <h4>Iniciar Sesión</h4>
+              <div class="row">
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <input type="text" class="form-control" id="cedula" name="cedula" value="" placeholder="cedula..">
+                                                      <div id="mensaje_cedula" class="errores"></div>
+                                </div>
+                                </div>
+                    
+              		    
+                    		    <div class="col-lg-6 col-xs-12 col-md-6">
+                    		    <div class="form-group">
+                                                      <input type="password" class="form-control" id="clave" name="clave" value="" placeholder="password..">
+                                                      <div id="mensaje_clave" class="errores"></div>
+                                </div>
+                                </div>
+              </div>
+        
+        
+		 </div>        
+         <div  class="col-lg-12 col-xs-12 col-md-12">      
+              
+               <div class="row">
+               <div class="col-lg-12 col-md-12 col-xs-12" style="text-align: center;">
+			           <button type="button" id="btn_iniciar"  class="btn btn-default" style="width: 100px;">
+					           	 <a ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEMSURBVEhLYxhQsPvuf/6d938m7Lr3q5wEXLLzzm8nqBH4wbZb/9h33/19ffe93//JwXvu/SqDGoUb7Ln7yxabZmLxrru/r0KNwg123fntjU0zsRgYbA+hRuEGw9uSbTd+/J+96yWKGC5MtiVbrn3/7xS87X/H0vso4tgwRZbYB24F45Ley/933fmFIo+M8VriErqb38Z7i+DCg2/DN1/59h8Zrzn7GW4JCCdWnPi/+eo30i2xD9j6ENkgQjgo/cD/lac+0tYSEA5I3fd/x62ftLOELJ/QJU5ggKapCwYGLJ/QJceTgkeYJXSpGUF1PEghNgOIw79KoUbhB0CL+Mhprey+/9sBagQ9AQMDAA6tE/H9/MAcAAAAAElFTkSuQmCC" alt="rss" /><b>Login</b></a>  
+					   </button>
+	           </div>
+	           </div>
+              
+              
+             
+             <div class="row">
+	          <div class="col-lg-6 col-md-6 col-xs-6" style="text-align: center; margin-top: 20px;">
+			 		   <button type="button" id="Cancelar" name="Cancelar" class="btn btn-default" style="width: 100px;">
+			           	 <a href="Contactos.html" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG7SURBVFhHYxgF5ID9+vwCl7zlBP9n2lAH59sLQI0mHuw35UndZ8b9er8Zz//DlvwX/xc4/6cW/pfv9PJfvnMS1Cr8YJ8Jj/0+M55/IIfQwjEg/K/A+d+/fEc7qJW4wT5Tnj6YQ2jlGBAGhlAf1ErcAOiApXRyzFKolbjBqGNwgVHH4ALkOOZPnuP/14lm/98kmf//m++EVQ06poljvmRY/99uKfx/tQE3GO+2Ffv/I8sOq1pkTBPHHHGWgTsEhs94KGJVi4xp4pjNZgIYjtllI4pVLTKmiWP2O0hgOOa4qyxWtciYJo55C0y0G0z44A7ZBAypT2nWWNUiY5o4BoS/Zdr+vxum8/9ehO7/H9n2WNWgY5o5BoSBhmMVx4Wp7pifOfb/L/upAbO20P81hjxgvNNK5P+1QI3/v3MdsOqBYao65nO6zf+tFkIoCRcZ7wA6ChR92PSCMNUcAypxkQs6XBhUAP4rwB59VHPM10wbrJZjw79ysEcXFUPG4f/jaEOiMK66iuoJmBI86hhceNQxuDBRjhlU/aa9pjx2g6ZHCQJAxyQD+9qvaOEYYIgQ39dGBoNiFGIUMDAwAABVeMYPthUUGwAAAABJRU5ErkJggg==" alt="rss" /></br><b>Contactos</b></a>  
+			           </button>
+			  </div>           
+			
+			  <div class="col-lg-6 col-md-6 col-xs-6" style="text-align: center; margin-top: 20px;">
+			 		   <button type="button" id="Cancelar" name="Cancelar" class="btn btn-default" style="width: 100px;">
+			           	 <a  href="Email.html" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVFhH7VPbS1NxHPcfiOitiEB7D2eXFV3ImaSQSuJLRhEGvYQFqVE0y1CjBCV60JAIym4PUQ1dF/Iyp7NZ0znnmVO3oRleylqbE+wlvp3P4Xf0/LYjmc3Vwz7w4cf39vl8Ds6EOOKIJZJuhwqTakP1CxRrNoo9EutCxqS6EMlEzUaxRzzMUvinYTbX+9cm1oauicY3JNaGvMowrJZm2MM+O105ZqpOrnE6P65To+ZOsJgLsASxp3YPQp9ZLY2pc4XaYHba/Fy6lqYuFpGj30V9Q94IFr38rBpAJuZqd9CDLvThAz9mHYlAVuqPuQNakuk/mksukylC1C7yxLMZ1SDoYx5+Ax3oKfUD2bp5Zs1DKCtbP7I9hQK6HdzBbOY+8t27GyFuc/so58k3Lghq9MN3cQ8dpS584DdWeWkDi7CI/uvlWwZTNCRoNDS9dxt3CE7qz1P/AP9n6xJ8lNrwXQqCF7Vyjn3chWtBX9AkE/zgyyIswlNdsSmo05JPTDuQnEzerEyaPbSfE/EfyyOX2cwZtjhGKeOhX3qVfaHTQv7jedw99KALffjAD74swiLQlI8md28lV04WtRiM9KUgP0LQ8/gRZxz+G8E8/ENmCo5IetCFvtz/bRhwvPQCGTveU1NzB3krysT/gF0LM3CivJQcgpsLgRp95R7uvOVXJB3oQVc5X1aYiat6srs91NJtJ0NbF3U3PKBA7kFO6Kv4tUKXVQqCF7Vyjn3c4R460IOucmfZYeQvtvQJ1NhupTevmmmy8BQnNputo/GaKulV9rGHfdzhXtb66zCgzTVMry0fyNBqIeFmDYUy9nCiMtF3iXPsYR93Sp2ohJFpsjnIYHpH5qcvyJ9/mBNGjT7m2FO7j2oY0Op0k9FsJWNzO41dKpH28aI2mruludodGPUwYO+gh95ae6QfZ9vzRulF3TM4orovc1XCyOzodVKT+CPtFF+1eThXNQxod6v31bjqYf6E/3WY4ZrKjSwCj2BO2s9YhgmIfsw6ElOlJQ1z6TtjE0b0mdAX32fW6vhUefnsdNFp2+it6lb7kKc+2oQu9Mcr9GeYZRxxrBAJCb8AZeGkQpALgFgAAAAASUVORK5CYII=" alt="rss" /></br><b>Email</b></a>  
+			           </button>
+			  </div>           
+			  </div> 
+			   
+			  <div class="row">
+			   
+			  <div class="col-lg-6 col-md-6 col-xs-6" style="text-align: center; margin-top: 20px;">
+			 		   <button type="button" id="Cancelar" name="Cancelar" class="btn btn-default" style="width: 100px;">
+			           	 <a  href="Mapa.html" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP3SURBVFhH7dVZTBNBGAfwxvjkk8+K0XhgiAdouyoK21BJSAT1QW29qEfiFUP0QcXEkChoJCRqxCNtFYwXHhgvIhq1Io0cpeWu22JVFKhKFBEVD1A/d6ezdbczxRaqL/o1/6TZXfr/ZXYmKP6ZsSuVQ5ysah6nZrZzrCrLpWY2cHFMJL79d6ZErR7sZJkdHMu8c6oZ8A9/vcQVN30yfvzPjXc1mDs0hF+6+RVLwX8WeIaZdCnDjdrDEUatMdRcWBjvphQHSrdDzcTgWnIESIRRB9KMzUuFmefSYNSxpbLr/knOmkcr7DOcWnUPV5MTYdCZxB8fc3w55DfehC/fekCYnu+9cIa7C5F5egIixKBPIMqss5RgiI6CAxPHw2VmEl8uvy8k4KYebtCeFX+86EkFQpS21sNeawFcf1IOhU2lMNK0hIAIqUiaIStpZFWwK2osbI0c7YsAkj6Dsx7Xy0fEJF1KR5ACp5la7J+RBh1Rcj82RgYRsn/SeOI5/vhn4nr5iJh0iwlh5l/NQGVp5kPwvKvdl1W3cgiQPXG6rER4Rdv8MEb+lUmfQWFVm3C9fETM5pIjCKO/mY2Klt7Yg15bdfsjdH2jOZfAFC6IJ4rOKif4QJlR48AWN5V4xslOS8D18hExMafWwIeeT+B408x/X4vKxvEb94HHAT/4T2xBGoFZnZ5MFvGpilPyr2wKOPg9RNxnGTcoFINwvXykG1hYHaG4u/cL1LS74e3n92hV8vgTJkWIiTYtBG6xfBP/Li6W0eJqcqQYIdqiTLjVXAWujhawtDXAllIDjDAuliGETMhbBA02DXwungWu2fRi//D/Fi7hWvr4Y4KJCAFnPEpHbiy1XJq6uZreWnX0UFxLn1Ax/hAhXY06eLg+lYpA0cyAiycOvMCVgScUDBXi0EGN/T7YS83AJWuomPrsTDh+r7AZVwaeYDE0yNdHeqirsYDNbkWpNRwiIA91c8FmLQ8fhgb59ngVvOtohbaXHqiusXtBtkpwpC6SYWrP5KN7YcHQIB+dKxGks7MTRQqqNR3xQdCq8MCwYGgQV5ketNkesLne+DBCPCKossy3d+oO5nhXbKAYOmQFJO/yALujC+ZkdQUENWxahzDVxdcGjvkdRIwX1EGA6nP3AZeS4IP0GxMspC9QK396HGlrB4YJFSKGCmpr+XXKQsX0FyKGCpKcsqAxdIg+aIgY2qZufdGGQEFhpuYvKAwHRAwN9MzTAqctV5/jysBTbElslEKc5an9hogRQFVNr2WgO1zFU1wZeE6ak3b+giwbMESMF/TKhzlqvZKBK/seHpRRZF7iTsy53aTaXcaFK5p9lU3n7TZ30JD/83/6HIXiJ7Sir/sfL0coAAAAAElFTkSuQmCC" alt="rss" /></br><b>Ubicanos</b></a>  
+			           </button>
+			  </div>          
+			
+			  <div class="col-lg-6 col-md-6 col-xs-6" style="text-align: center; margin-top: 20px;">
+			 		   <button type="button" id="Cancelar" name="Cancelar" class="btn btn-default" style="width: 100px;">
+			           	 <a  href="Llamar.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH4SURBVFhHYxgFo4BaQEtrCo+ayaQYddPJfeqmk2aCscnkJk3TKc5QJfQBxsYzWTVMJl3UMJ38HwduhSqlPVAznqSBxQFwrG4y6SZUKe2ButFkXWyOgGEdy2nfo7MO7CYZZx/YHpW1PxVqDXGAkGP0bGb+j8k+QCbe/y86d78M1CrCgLaOOfA/KvuALtQqwoAUxxQ1LP+/7WgIQQxSR3PHlLUt+H/2jiVBDFI3shxT3LT0/76z3gQxSB3NHUMOHhmOKWw9+3/rte//11/4DOZPWPUQzAfRID5IHMQHqYPpoZljitrO/d997/f/rde/g/lT1j8G80E0iA8SB/FB6mB6aOaYxILD//ObzvzPazwN5qdXHAfzQTSIDxIH8UHqYHpo5piUkqP/qyde+V/VfxnMz286DeaDaBAfJA7ig9TB9IyMaAJFwbpzX/6vOvkBzO9Zeg/MB9EgPkgcxAepg+mhmWPIwTRzTHbtyf9zdjz/P33zUzC/ccZ1MB9Eg/ggcRAfpA6mZ2SkmfSq4//7Vzz437MEkkZAuQfEh+UukDiID1IH0zMy0gwZ+HNo2m5+qFWEAaHegbbFtFdAQ8tJxcAGeVFMxn4dqDXEAXC/yXTSJWwOAWFgZ64dqpQ+QE+vm1vddGI00FHdsB6lhsnkOrr3KEfBKMAJGBgA37g/wKTB/ZQAAAAASUVORK5CYII=" alt="rss" /></br><b>LLamar</b></a>  
+			           </button>
+			  </div>  
+			          
+	          </div>
+             
+        
+   <br><br>
+      
+    </div>
+	 
+
+	 
+	
+	
+	<script src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready( function (){
+		   pone_espera();
+		  
+	});
+		
+	function pone_espera(){
+	
+		   $.blockUI({ 
+				message: '<h4><img src="img/load.gif" /> Cargando...</h4>',
+				css: { 
+		            border: 'none', 
+		            padding: '15px', 
+		            backgroundColor: '#000', 
+		            '-webkit-border-radius': '10px', 
+		            '-moz-border-radius': '10px', 
+		            opacity: .5, 
+		            color: '#fff',
+		           
+	     		}
+	 });
+		
+	 setTimeout($.unblockUI, 1000); 
+	 
+	}
+	</script>
+	
+	<script src="js/iniciar.js"></script>
+	
+	<!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+   
+
+ 
+</body>
+
+</html>
