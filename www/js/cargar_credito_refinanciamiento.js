@@ -29,7 +29,7 @@ function checkConnection1() {
 
 
 function load_refinanciamiento(pagina){
-	var base_url = 'http://18.218.148.189:80/webservices/';
+	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
 	var pag_service = 'CargarCreditosDetalleService.php?jsoncallback=?';
 	var cedula = localStorage.getItem('cedula_usuarios');
 	   var search=$("#search_credito_refinanciamiento").val();
