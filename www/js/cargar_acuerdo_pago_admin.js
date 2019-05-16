@@ -41,7 +41,7 @@ function checkConnection1(){
 
 
 function load_acuerdo_pago(pagina){
-	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+	var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 	var pag_service = 'CargarCreditosDetalleService.php?jsoncallback=?';
 	var cedula_participe = getQueryVariable("cedula_participe");
 	   var search=$("#search_acuerdo_pago").val();

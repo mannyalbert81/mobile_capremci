@@ -27,7 +27,7 @@ function checkConnection1() {
 
 
 function load_usuarios(pagina){
-	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+	var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 	var pag_service = 'CargarUsuariosService.php?jsoncallback=?';
 	
 	

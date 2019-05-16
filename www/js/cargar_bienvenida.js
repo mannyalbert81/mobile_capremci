@@ -45,7 +45,7 @@ function checkConnection1() {
 
 
 function pone_cta_individual(cedula){
-	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+	var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 	
 	       $.ajax({
@@ -67,7 +67,7 @@ function pone_cta_individual(cedula){
 
 
 function pone_cta_desembolsar(cedula){
-	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+	var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 	
 	       $.ajax({
@@ -88,7 +88,7 @@ function pone_cta_desembolsar(cedula){
 
 
 function pone_credito_ordinario(cedula){
-	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+	var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 	
 	       $.ajax({
@@ -108,7 +108,7 @@ function pone_credito_ordinario(cedula){
 
 
  function pone_credito_emergente(cedula){
-	var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+	var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 	var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 	
 	       $.ajax({
@@ -129,7 +129,7 @@ function pone_credito_ordinario(cedula){
  
  
  function pone_credito_2x1(cedula){
-		var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+		var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 		
 		       $.ajax({
@@ -148,7 +148,7 @@ function pone_credito_ordinario(cedula){
 		  }
 
  function pone_credito_hipotecario(cedula){
-		var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+		var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 		
 		       $.ajax({
@@ -170,7 +170,7 @@ function pone_credito_ordinario(cedula){
  
  
  function pone_acuerdo_pago(cedula){
-		var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+		var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 		
 		       $.ajax({
@@ -192,7 +192,7 @@ function pone_credito_ordinario(cedula){
  
  
  function pone_credito_refinanciamiento(cedula){
-		var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+		var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
 		var pag_service = 'CargarCreditosBienvenidaService.php?jsoncallback=?' ;
 		
 		       $.ajax({

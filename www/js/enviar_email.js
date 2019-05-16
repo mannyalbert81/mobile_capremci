@@ -135,7 +135,7 @@ function checkConnection() {
   		var asunto = $("#asunto").val();
   		var mensaje = $("#mensaje").val();
   		
- 		var base_url = 'http://186.4.157.125:4000/webcapremci/webservices/';
+ 		var base_url = 'http://186.4.157.125:80/webcapremci/webservices/';
  		var pag_service = 'MailService.php';
  		
  		
