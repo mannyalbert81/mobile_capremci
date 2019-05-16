@@ -14,7 +14,7 @@
     
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="26" />
+    <preference name="android-minSdkVersion" value="21" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" /> <!--Activador Touch-->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" /><!--Ejecutor Sistema-->
     <!--<plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />-->
