@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="jcaprem.com" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="jcaprem.com" version="1.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
    
    <feature name="BarcodeScanner">
         <param name="browser-package" value="BarcodeScanner" />
@@ -14,7 +14,7 @@
     
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-minSdkVersion" value="26" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" /> <!--Activador Touch-->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" /><!--Ejecutor Sistema-->
     <!--<plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />-->
